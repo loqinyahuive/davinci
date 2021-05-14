@@ -107,7 +107,7 @@ export const getTypesOfModelByKeyName = (model: IViewModel, type: IKeyOfViewMode
 
 
 export const getListsByViewModelTypes = (model: IViewModel, type: IKeyOfViewModelProps) => (modelType: ViewModelTypes) => {
-  return cacheManager(model, type)(name, (cache) => {
+  return cacheManager(model, type)('', (cache) => {
     const target = cache[type]
     return Object.keys(target).reduce((iteratee, current) => {
       return iteratee.concat(target[current] === modelType ? current : [])

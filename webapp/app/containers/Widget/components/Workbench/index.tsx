@@ -108,7 +108,8 @@ interface IWorkbenchStates {
   settings: IWorkbenchSettings
 }
 
-const SplitPane = React.lazy(() => import('react-split-pane'))
+// const SplitPane = React.lazy(() => import('react-split-pane'))
+import SplitPane, { Pane } from 'react-split-pane';
 
 export class Workbench extends React.Component<
   IWorkbenchProps & RouteComponentWithParams,
