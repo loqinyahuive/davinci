@@ -1,7 +1,7 @@
 import React from 'react'
 import { IChartProps } from './index'
 import chartlibs from '../../config/chart'
-import echarts from 'echarts/lib/echarts'
+import * as echarts from 'echarts/lib/echarts'
 import { ECharts } from 'echarts'
 import chartOptionGenerator from '../../render/chart'
 const styles = require('./Chart.less')
